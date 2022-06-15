@@ -1,0 +1,304 @@
+*,
+::before,
+::after {
+  margin: 0%;
+  padding: 0;
+}
+
+#root {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  font-family: "Rubik", sans-serif;
+  background-color: #0f1424;
+}
+
+#root .App {
+  width: 90%;
+  max-width: 500px;
+  margin: 2rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 1100px) {
+  #root .App {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 1100px;
+    height: 500px;
+    margin: auto;
+  }
+}
+
+.top-card {
+  width: 100%;
+  height: 200px;
+  background: #1c1f4a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.top-card .top-card-header {
+  padding-inline: 1.4rem;
+  height: 66%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #5847eb;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+  border-radius: 15px;
+}
+
+.top-card .top-card-header p {
+  color: #bdc1ff;
+}
+
+.top-card .top-card-header h1 {
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+
+.top-card .top-card-header .comendrun {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.top-card .period ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding: 1.5rem 2rem;
+}
+
+.top-card .period ul li button {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  color: #bdc1ff;
+  font-size: 1.2rem;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.top-card .period ul li button:hover {
+  cursor: pointer;
+  color: white;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.top-card .period ul li .clicked {
+  color: white;
+  -webkit-transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in;
+}
+
+@media screen and (min-width: 1100px) {
+  .top-card {
+    max-width: 300px;
+    height: 100%;
+  }
+  .top-card .top-card-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-left: 2rem;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-transition: opacity 0.3s ease-in;
+    transition: opacity 0.3s ease-in;
+  }
+  .top-card .top-card-header:hover {
+    opacity: 0.8;
+    -webkit-transition: opacity 0.3s ease-in;
+    transition: opacity 0.3s ease-in;
+  }
+  .top-card .top-card-header .comendrun {
+    margin-top: 2rem;
+  }
+  .top-card .top-card-header p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .top-card .top-card-header h1 {
+    font-size: 3rem;
+  }
+  .top-card .period ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .top-card .period ul li {
+    margin-right: auto;
+  }
+}
+
+.cards-grid {
+  display: -ms-grid;
+  display: grid;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 1100px) {
+  .cards-grid {
+    -ms-grid-columns: (minmax(200px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.card {
+  width: 100%;
+  height: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card .card-header {
+  height: 25%;
+}
+
+.card .body {
+  height: 75%;
+  border-radius: 15px;
+  background: #1c1f4a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+  padding-inline: 2rem;
+  -webkit-transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in;
+}
+
+.card .body:hover {
+  opacity: 0.8;
+  -webkit-transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in;
+}
+
+.card .body .flex-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .body .category-placeholder h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.card .body .category-placeholder .more {
+  cursor: pointer;
+  padding: 1rem;
+  margin: -1rem;
+}
+
+.card .body .hours-placeholder h1 {
+  font-weight: 300;
+}
+
+.card .body .hours-placeholder p {
+  color: #bdc1ff;
+}
+
+@media screen and (min-width: 1100px) {
+  .card {
+    height: 100%;
+  }
+  .card .card-header {
+    height: 20%;
+  }
+  .card .body {
+    height: 80%;
+    padding-block: 2rem;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .card .hours-placeholder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card .hours-placeholder h1,
+  .card .hours-placeholder p {
+    margin-right: auto;
+  }
+  .card .hours-placeholder h1 {
+    font-size: 3rem;
+  }
+}
+/*# sourceMappingURL=sass.css.map */
