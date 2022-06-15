@@ -47,18 +47,18 @@ Users should be able to:
 
 ### What I learned
 
-this challenge was a good way to practise about SASS and SCSS and also i learned about its limitations. still by now i preffer CSS and its custom properties more.
-also it was good practise for my css grid knowledge and watched a couple of videos about it.
+this challenge was a good way to practice SASS and SCSS and also I learned about its limitations. still, by now, I prefer CSS and its custom properties more.
+also, it was good practice for my CSS grid knowledge, and watched a couple of videos about it.
 
 ### Continued development
 
-I hope i can write a more concise and also shorter code for this kind of application, its not that hard and also it was a bit tricky, because i tried to DRY as much as i can but at the end i couldn do what i wanted to. for expamle i dont know yet how to replace an addressed directory of an array with our state
+I hope I can write a more concise and also shorter code for this kind of application, it's not that hard, and also it was tricky because I tried to DRY as much as I can but in the end, I could do what I wanted to. for example i don't know yet how to replace an addressed directory of an array with our state
 
 ```js
 const directory = data.timeframes.daily.current;
 ```
 
-for example i wanted to change the directory when our state changes and just replacing "daily" with our new state. but i wasnt able to do that yet. hopefully ill find another way around.
+for example, I wanted to change the directory when our state changes and just replace "daily" with our new state. but I wasn't able to do that yet. hopefully ill find another way around it.
 
 ### Useful resources
 
